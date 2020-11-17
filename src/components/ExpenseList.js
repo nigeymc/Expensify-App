@@ -17,11 +17,11 @@ export const ExpenseList = (props) => (
     </div>
 );
 
-const mapSateToProps = (state) => {
+const mapStateToProps = (state) => {
     return {
         expenses: selectExpenses(state.expenses, state.filters)
     };
 };
 
-export default connect(mapSateToProps)(ExpenseList);
+export default connect(mapStateToProps)(ExpenseList);
 
